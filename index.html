@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf7ee">
+  <meta name="theme-color" content="#101419">
   <meta name="description" content="Moderationsprofil von Antonio (Mr Tonno): Discord-Serverleitung, German Voice und Erfahrung in deutsch- und spanischsprachigen Communitys.">
   <title>Mr Tonno — Administration &amp; Moderation</title>
   <style>
-    :root { --paper:#faf7ee; --ink:#172b3d; --blue:#244ec9; --line:#c9c8bc; --serif:'Iowan Old Style',Georgia,serif; }
+    :root { --paper:#101419; --ink:#edf1f3; --blue:#98c5e6; --line:#39424c; color-scheme:dark; }
     * { box-sizing:border-box }
     html { scroll-behavior:smooth }
     body { margin:0; color:var(--ink); background:var(--paper); font:17px/1.65 system-ui,sans-serif }
@@ -16,34 +16,31 @@
     a:focus-visible { outline:3px solid #ed8158; outline-offset:5px }
     header,main,footer { width:min(1140px,90%); margin:auto }
     header,footer,nav { display:flex; align-items:center; justify-content:space-between; gap:20px }
-    header { padding:22px 0; border-bottom:1px solid var(--ink) }
-    .wordmark { font:italic bold 28px var(--serif); text-decoration:none }
+    header { padding:22px 0; border-bottom:1px solid var(--line) }
+    .wordmark { font:600 23px 'Segoe UI',system-ui,sans-serif; text-decoration:none }
     nav { font-size:15px }
     .hero { display:grid; grid-template-columns:1.15fr 1fr; gap:7%; align-items:center; padding:clamp(45px,7vw,90px) 0 }
     h1,h2,h3,p { margin:0 }
-    h1,h2,h3 { font-family:var(--serif); font-weight:normal; line-height:1.06 }
+    h1,h2,h3 { font-family:'Segoe UI',system-ui,sans-serif; font-weight:normal; line-height:1.06 }
     h1 { font-size:clamp(58px,7vw,108px); letter-spacing:-.065em }
-    h1 em { display:block; color:var(--blue) }
+    h1 { font-weight:650 }
     .intro { max-width:40ch; margin:22px 0 }
-    .cta { display:inline-block; background:var(--ink); color:white; padding:10px 18px; border-radius:4px; text-decoration:none }
-    .cta:hover { background:var(--blue); color:white }
-    .print { position:relative; overflow:hidden; isolation:isolate; min-height:260px; aspect-ratio:1.35; background:#2044a7; color:#fff; display:grid; place-items:center; border-radius:48% 48% 4px 4px }
-    .sun { position:absolute; width:54%; aspect-ratio:1; border-radius:50%; background:#ffb477; top:13% }
-    .water { position:absolute; inset:58% 0 0; background:repeating-linear-gradient(175deg,#214dad 0 8px,#698ac8 9px,#214dad 11px 19px) }
-    .fish { position:relative; width:66%; height:32%; transform:rotate(-13deg) }
-    .body { position:absolute; inset:0 0 0 16%; border-radius:80% 18% 75% 24%; transform:rotate(12deg); background:linear-gradient(163deg,#112d48 0 41%,#487ba4 42% 53%,#c8e1e5 54% 74%,#edf1d5 75%) }
-    .tail { position:absolute; left:0; top:11%; width:30%; height:82%; background:#142f4e; clip-path:polygon(0 0,100% 50%,0 100%,19% 50%) }
-    .fin { position:absolute; top:-15%; left:48%; width:24%; height:36%; background:#183851; clip-path:polygon(0 100%,22% 0,100% 100%) }
-    .eye { position:absolute; top:40%; right:9%; width:8px; height:8px; border-radius:50%; background:#102b40; box-shadow:0 0 0 3px #faf0ce }
-    .chapter { display:grid; grid-template-columns:1fr 2fr; gap:7%; padding:50px 0; border-top:1px solid var(--line) }
+    .cta { display:inline-block; background:#acd2ec; color:#102332; padding:10px 18px; border-radius:4px; text-decoration:none }
+    .cta:hover { background:#cbe6fa; color:#102332 }
+    .profile { background:#191f26; border:1px solid var(--line); border-top:3px solid #89b2ce; padding:clamp(24px,4vw,44px); border-radius:6px }
+    .profile h2 { font-size:25px; letter-spacing:-.03em }
+    .profile dl { margin:20px 0 0 }
+    .profile dl div { padding:12px 0; border-top:1px solid var(--line) }
+    .profile dt { font-size:14px; color:#aebdca }
+    .profile dd { margin:2px 0 0; font-weight:600 }    .chapter { display:grid; grid-template-columns:1fr 2fr; gap:7%; padding:50px 0; border-top:1px solid var(--line) }
     h2 { font-size:clamp(34px,4.5vw,62px); letter-spacing:-.055em }
     h3 { font-size:29px; margin-bottom:10px }
     .copy { max-width:62ch }
     .copy p+p,.station+.station { margin-top:20px }
     .station+.station { border-top:1px solid var(--line); padding-top:22px }
-    .bot { border:0; background:#193983; color:#fcf8e9; border-radius:8px; padding:clamp(25px,4vw,55px); margin-bottom:42px }
-    footer { border-top:1px solid var(--ink); padding:20px 0 32px }
-    @media(max-width:720px) { .hero,.chapter { grid-template-columns:1fr; gap:24px } .print { min-height:0; width:min(100%,430px); aspect-ratio:1.8 } .chapter { padding-block:32px } nav { gap:12px;font-size:14px } header { flex-wrap:wrap } }
+    .bot { border:0; background:#1b2833; color:#edf1f3; border-radius:8px; padding:clamp(25px,4vw,55px); margin-bottom:42px }
+    footer { border-top:1px solid var(--line); padding:20px 0 32px }
+    @media(max-width:720px) { .hero,.chapter { grid-template-columns:1fr; gap:24px } .chapter { padding-block:32px } nav { gap:12px;font-size:14px } header { flex-wrap:wrap } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto } }
   </style>
 </head>
@@ -55,19 +52,19 @@
   <main>
     <section class="hero" id="start">
       <div>
-        <h1>Antonio.<em>Mr Tonno.</em></h1>
-        <p class="intro"><strong>Discord-Moderator · Deutsch &amp; Spanisch</strong></p>
-        <p class="intro">Ich suche ein Discord-Team, in das ich meine Erfahrung als Moderator und Serverleiter einbringen kann. Ich war Moderator bei German Voice, war auf großen spanischsprachigen Servern aktiv und leite heute meine eigene Community Void.</p>
+        <h1>Mr Tonno</h1>
+        <p class="intro"><strong>Antonio · Discord-Moderation &amp; Serverleitung</strong></p>
+        <p class="intro">Ich suche ein Discord-Team, in das ich meine Erfahrung als Moderator und Serverleiter einbringen kann. Heute leite ich Void. Zuvor habe ich bei German Voice auf Discord und Roblox moderiert. Auf zwei spanischsprachigen Servern habe ich als Admin gearbeitet, davon rund ein Jahr mit Schwerpunkt Servergestaltung.</p>
         <a class="cta" href="https://discord.com/users/207877760582942720">Auf Discord kennenlernen ↗</a>
       </div>
-      <div class="print" aria-hidden="true"><div class="sun"></div><div class="water"></div><div class="fish"><i class="tail"></i><i class="fin"></i><i class="body"></i><i class="eye"></i></div></div>
-    </section>
+      <aside class="profile" aria-label="Kurzprofil"><h2>Profil</h2><dl><div><dt>Aktuelle Rolle</dt><dd>Serverleitung bei Void</dd></div><div><dt>Frühere Rollen</dt><dd>Moderator und später Helper bei German Voice<br>Admin in zwei spanischsprachigen Communitys</dd></div><div><dt>Sprachen</dt><dd>Deutsch und Spanisch</dd></div></dl></aside></section>
     <section class="chapter" id="erfahrung">
       <h2>Meine Erfahrung</h2>
       <div class="copy">
         <div class="station"><h3>Void · Serverleitung</h3><p>Auf meinem eigenen Discord bin ich für die Regeln und die Organisation des Mod-Teams verantwortlich. Dazu gehört für mich die Frage, an wen sich ein Mitglied wenden kann, wenn es ausgerechnet mit einem Teammitglied ein Problem hat. Bei uns gehen solche Beschwerden direkt an die Admins. Für Einsprüche gegen Maßnahmen gibt es einen eigenen Weg.</p></div>
-        <div class="station"><h3>German Voice · Ehemaliger Moderator</h3><p>Bei German Voice habe ich auf Discord und Roblox moderiert. Dadurch kenne ich beide Seiten der Teamarbeit: als Moderator nach den Regeln eines bestehenden Teams handeln und als Admin selbst Verantwortung für diese Regeln übernehmen.</p></div>
-        <div class="station"><h3>Spanischsprachige Communitys</h3><p>Früher war ich auch auf spanischsprachigen Servern mit vielen Mitgliedern aktiv. Wenn sich jemand auf Spanisch besser ausdrücken kann, können wir das Gespräch direkt auf Spanisch führen. Das gilt für eine kurze Frage im Chat genauso wie für ein persönliches Gespräch im Support.</p></div>
+        <div class="station"><h3>German Voice · Frühere Moderation</h3><p>Von Juni bis September 2026 war ich bei German Voice Moderator auf Discord und im Roblox-Spiel. Anschließend war ich bis zum 21. November 2026 als Helper ausschließlich für die Discord-Moderation zuständig.</p></div>
+        <div class="station"><h3>Spanischsprachige Community · Administration und Servergestaltung</h3><p>Rund ein Jahr lang war ich Admin auf einem spanischsprachigen Server mit vielen Mitgliedern. Mein Schwerpunkt lag auf der Gestaltung des Servers. Spanisch war für mich dort Alltag und ist neben Deutsch eine Sprache, in der ich ein Mod-Team unterstützen kann.</p></div>
+        <div class="station"><h3>Weitere spanischsprachige Community · Administration</h3><p>Auf einem zweiten spanischsprachigen Server war ich einige Monate als Admin tätig. Diese Station endete mit einem Raid auf den Server.</p></div>
       </div>
     </section>
     <section class="chapter" id="arbeitsweise">
@@ -76,7 +73,7 @@
       <div class="station"><h3>Fälle sauber übergeben</h3><p>Wenn morgen jemand anderes einen Einspruch übernimmt, soll die Person auch ohne Rückfrage bei mir verstehen können, warum ich einen Timeout vergeben habe. Genauso gehört für mich dazu, dem Mitglied zuzuhören, wenn es eine andere Sicht auf die Situation hat.</p></div></div>
     </section>
     <section class="chapter bot" id="voidbot">
-      <h2>Eigeninitiative: VoidBot</h2>
+      <h2>Projekt VoidBot</h2>
       <div class="copy"><p>Ich entwickle VoidBot, weil viele Moderationsbots für meinen Server entweder zu schnell anschlagen oder wichtige Zusammenhänge übersehen. Meine Idee ist eine KI, die dem Team hilft, wenn gerade kein Mod im Chat ist. Sie soll auffällige Stellen markieren, damit der nächste Mod das Gespräch nachlesen und selbst entscheiden kann.</p></div>
     </section>
     <section class="chapter" id="kontakt"><h2>Kontakt</h2><div class="copy"><p>Ihr sucht Unterstützung für euer Mod-Team? Schreibt mir auf Discord, wie eure Community tickt und wobei ihr Hilfe braucht. Dann können wir darüber sprechen, wo ich ins Team passe.</p><p><a class="cta" href="https://discord.com/users/207877760582942720">Discord · mr_tonno ↗</a></p></div></section>
