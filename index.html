@@ -19,19 +19,23 @@ h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.1;letter-spacing:-.045em}h1{font-size
 @media(max-width:420px){header{flex-wrap:wrap}nav{gap:12px}nav a{font-size:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .communities{display:grid;grid-template-columns:1.22fr 1fr;gap:16px}.community{border:1px solid var(--line);background:var(--panel);border-radius:16px;padding:clamp(21px,3vw,38px)}.community small,.timeline small{color:var(--accent)}.community h3{margin:6px 0 12px}.gmv{background:radial-gradient(ellipse at 100% 0%,#3e2b55,transparent 58%),#171321}.serverhead{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px}.serverhead a{font-size:14px}.population{margin:18px 0 25px}.population strong{display:block;color:var(--text);font-size:clamp(38px,5vw,70px);letter-spacing:-.06em;line-height:1.1}.population small{display:block}.sidecards{display:grid;gap:16px}.timeline{list-style:none;padding:0 0 0 19px;margin:0 0 0 5px;border-left:1px solid #756389}.timeline li{position:relative}.timeline li+li{margin-top:17px}.timeline li:before{content:"";position:absolute;width:9px;height:9px;background:var(--accent);border-radius:50%;left:-24px;top:8px}.timeline h4{margin:2px 0;font-size:18px}.features{margin:22px 0 0}.features dt{font-weight:650;color:var(--text);margin-top:16px}.features dd{margin:4px 0;color:var(--muted)}@media(max-width:760px){.communities{grid-template-columns:1fr}header nav{flex-wrap:wrap}}
+#void h2 em{font-family:Georgia,serif;font-weight:400;color:var(--accent)}
+.guard-layout{background:radial-gradient(ellipse at top left,#33253e,transparent 58%),#17141f;border:1px solid #51405f;border-radius:18px;padding:clamp(22px,4vw,48px)}
+.guard{display:grid;grid-template-columns:1fr 1.4fr;gap:6%}.guard h2{margin-top:10px}.guard .features{border-top:1px solid var(--line);padding-top:4px}.sidecards .population strong{font-size:38px}
+@media(max-width:760px){.guard{grid-template-columns:1fr;gap:18px}}
 </style>
 </head>
 <body>
-<header><a class="brand" href="#start">mr<span>.</span>tonno</a><nav aria-label="Hauptnavigation"><a href="#stationen">Communitys</a><a href="#praxis">Moderation</a><a href="#projekte">Bots</a><a href="#kontakt">Kontakt</a></nav></header>
+<header><a class="brand" href="#start">mr<span>.</span>tonno</a><nav aria-label="Hauptnavigation"><a href="#stationen">Communitys</a><a href="#praxis">Moderation</a><a href="#projekte">VoidGuard</a><a href="#kontakt">Kontakt</a></nav></header>
 <main>
 <section class="hero" id="start">
   <div class="stars" aria-hidden="true"></div><div class="planet" aria-hidden="true"></div><div class="orbit" aria-hidden="true"></div>
   <details class="secret"><summary aria-label="Stern erkunden">✦</summary><p>Ein Thunfisch im All. Erwischt. 🐟</p></details>
   <div class="hero-copy"><span class="eyebrow">Antonio / Discord &amp; Roblox</span><h1>Mr Tonno.</h1><p>Die meiste Zeit findet man mich im Chat von Void. Meistens schreibe ich einfach mit. Manchmal bin ich derjenige, der „Reicht“ sagt.</p><a class="action" href="#praxis">So moderiere ich ↓</a></div>
 </section>
-<section class="section split" id="void"><div><span class="eyebrow">Meine Community</span><h2>Bei mir auf Void.</h2></div>
+<section class="section split" id="void"><div><span class="eyebrow">Bei mir auf Void</span><h2>Jeder ist willkommen.<br><em>Außer Stress.</em></h2></div>
 <div><p>Ich bin Antonio, online Mr Tonno. Wenn ich Zeit habe, bin ich im Chat ziemlich aktiv. Im Voice erwischt man mich seltener. Ich mache selbst gern einen Spruch und nehme meinen Job als Admin trotzdem ernst.</p>
-<p>Auf Void sieht man, was ich an Servergestaltung mag. Ich kümmere mich um den Aufbau und schreibe die Regeln, nach denen wir moderieren. Mein Grundgedanke dabei ist ziemlich simpel: Jeder ist willkommen. Stress kann draußen bleiben.</p>
+<p>Am liebsten ist mir, wenn ich mitten im Chat einen Witz machen kann und trotzdem jeder weiß, dass er sich an mich wenden kann, wenn etwas kippt. So wünsche ich mir Void. Darum schreibe ich die Regeln selbst und schaue bei einer Meldung lieber ein zweites Mal hin.</p>
 </div></section>
 <section class="section" id="stationen">
   <h2 class="heading">Meine Communitys.</h2>
@@ -45,7 +49,7 @@ h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.1;letter-spacing:-.045em}h1{font-size
       </ol>
     </article>
     <div class="sidecards">
-      <article class="community"><small>Heute · Serverleitung</small><h3>Void</h3><p>Mein eigener Discord. Hier gestalte ich den Server, schreibe die Regeln und kümmere mich mit meinem Team um die Moderation.</p></article>
+      <article class="community"><small>Heute · Serverleitung</small><div class="serverhead"><h3>Void</h3><a href="https://discord.gg/k4YuWs69k">Komm auf Void ↗</a></div><p class="population"><strong>≈ 282</strong> Mitglieder auf Discord <small>Stand 21.11.2026</small></p><p>Hier findest du mich am ehesten im Chat. Wenn du vorbeischaust, sag ruhig Hallo.</p></article>
       <article class="community"><small>Frühere Stationen · Administration</small><h3>Spanischsprachige Communitys</h3><p>Auf einem Server war ich rund ein Jahr Admin und habe den Aufbau mitgestaltet. Auf einem zweiten war ich mehrere Monate als Admin aktiv.</p></article>
     </div>
   </div>
@@ -55,15 +59,15 @@ h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.1;letter-spacing:-.045em}h1{font-size
 <article><span class="eyebrow">Die Grenze</span><h3>„Reicht.“</h3><p>Wenn einer weiterstichelt und dem anderen der Spaß sichtbar vergangen ist, sage ich das direkt im Chat. Oft genügt ein freundliches „Reicht“. Gehen die Angriffe weiter oder beleidigt jemand einen anderen ganz gezielt, greife ich als Mod ein.</p></article>
 <article><span class="eyebrow">Die Entscheidung</span><h3>Warum der Timeout?</h3><p>Wer morgen einen Einspruch bearbeitet, soll diese Frage beantworten können. Deshalb gehört für mich zu jeder Maßnahme ein Protokoll. Darin muss stehen, welcher Vorfall den Ausschlag gab. „Der hat gestern genervt“ hilft weder dem Team noch der betroffenen Person.</p></article>
 </div></section>
-<section class="section" id="projekte"><h2 class="heading">Die Bots hinter Void.</h2><div class="projects">
-<article class="project"><small>Eigenentwicklung · In Entwicklung</small><h3>VoidGuard</h3>
-<p>Wenn gerade kein Mod mitliest, prüft VoidGuard Nachrichten anhand unserer Serverregeln. Im Dashboard sieht mein Team, welche Stelle aufgefallen ist und wie die KI zu ihrer Einschätzung kam.</p>
+<section class="section" id="projekte"><div class="guard-layout">
+<article class="guard"><div><small class="eyebrow">Mein Moderationsbot · In Entwicklung</small><h2>VoidGuard.</h2></div>
+<div><p>Die Idee kam aus unserem eigenen Chat. Ich will wissen, wenn jemand Hilfe braucht – auch wenn ich erst später wieder online bin. Genau dafür baue ich VoidGuard.</p><p>Wenn gerade kein Mod mitliest, prüft VoidGuard Nachrichten anhand unserer Serverregeln. Im Dashboard sieht mein Team, welche Stelle aufgefallen ist und wie die KI zu ihrer Einschätzung kam.</p>
 <dl class="features">
   <dt>Gespräche im Zusammenhang prüfen</dt><dd>Bei einer Discord-Antwort bezieht der Bot die ursprüngliche Nachricht mit ein. Im Lernmodus kann das Team Einschätzungen bewerten und harmlose Nachrichten als solche markieren.</dd>
   <dt>Direkt in Discord moderieren</dt><dd>Mods können Verwarnungen, Timeouts und Bans mit einem Grund aussprechen und auf Wunsch eine Direktnachricht schicken. Bekannte Zweitaccounts lassen sich verknüpfen.</dd>
   <dt>Entscheidungen wiederfinden</dt><dd>Für einen Einspruch können Mods den Fallverlauf eines Accounts abrufen. Im Dashboard lege ich fest, welcher Protokollkanal welche Angaben erhält.</dd>
-</dl></article>
-<article class="project"><small>Auf unserem Server</small><h3>VoidBot</h3><p>Wenn euch auf Void ein Bot mit meinem Gesicht begegnet, ist das VoidBot. Dahinter steckt Cakey Bot, ein fertiger Discord-Bot. Ich habe ihm für unsere Community einen eigenen Namen und mein Gesicht gegeben.</p></article>
+</dl></div></article>
+
 </div></section>
 <section class="section split contact" id="kontakt"><h2>Man liest sich.</h2><div><p>Falls euch im Team gerade ein Mod fehlt, schreibt mir gern auf Discord. Erzählt mir einfach, wie es bei euch im Chat zugeht.</p><a class="action" href="https://discord.com/users/207877760582942720">Mr Tonno auf Discord ↗</a></div></section>
 </main><footer><strong>mr.tonno</strong><a href="https://www.roblox.com/users/299022857/profile">iAntoniio auf Roblox ↗</a></footer>
